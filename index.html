@@ -1,35 +1,24 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="main.css">
 <script src="https://code.highcharts.com/highcharts.js"></script>
-<header class="opaque-header">
-    <center>
-        <img class="logo" src="./images/mcdonalds.png">
-    </center>
-</header>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://code.highcharts.com/modules/wordcloud.js"></script>
 <body>
-    <div style="margin-top:88px; width:50%; margin-left: -10px;">
-        <img src="./images/home_promo_franchising.jpg" style="width:103%;">
-        <div class="centered1">
-            <center>Understand The<br>Long-term Impact Of The Impossible Burger</center>
-        </div>
-        <a href="monthly_sales_rep.html">
-            <center><button class="button1 button4"><b>Learn more</b></button></center>
-        </a>
-    </div>
-    <div style="margin-top:-343px; width:50%; float:right;">
-        <img src="./images/home_promo_investors.jpg" style="width:103%;">
-        <div class="centered2">
-            <center>Understand<br>Business Trends In The Short-term</center>
-        </div>
-        <a href="daily_sales_rep.html">
-            <center><button class="button2 button4"><b>Learn more</b></button></center>
-        </a>
-    </div>
-    <div>
-        <a href="charts.pdf">
-            <center><button class="pdf button4"><b>Download all the charts in a pdf</b></button></center>
-        </a>
-    </div>
+    <div id="container1" style="min-width: 310px; max-width: 500px; height: 500px; margin: 0 auto;"></div>
+    <figure class="highcharts-figure" >
+        <div id="container2" style="min-height: 600px;"></div>
+        <p class="highcharts-description">
+            <center>The population pyramid compares Robert Downey Jr.'s Domestic and International Box Office returns
+            every year he was in a movie. The pyramid can be used understand Robert Downey Jr.'s popularity growth
+            over the years domestically and internationally.</center>
+        </p>
+    </figure>
+    <div id="container3"></div>
+    <center><p class="highcharts-description">The graph represents what the general audience thinks of Robert Downey Jr. I got the data by
+        webscrapping an interview of RDJ back in 2015.</p></center>
 </body>
-<script src="monthlysales.js"></script>
+<script src="main.js"></script>
 </html>
